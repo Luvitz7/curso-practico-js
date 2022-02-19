@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" class="estilo">
     <title>Figuras Geometricas</title>
 </head>
@@ -13,9 +16,12 @@
     <p>Este es el primer taller del curso del JavaScrip</p>
     </header>
     <section class="container">
-    <section>
+    <section class="operaciones">
         <h2>Calcula el área y perimetro de un Cuadrado</h2>
-        <form>
+        <svg height="200" width="200">
+            <polygon points="0,0 0,180 180,180 180,0 " style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1" />
+        </svg>
+        <form>    
             <label for="inputCuadrado">
                 Escribe cuanto mide los lados del cuadrado
             </label>
@@ -25,15 +31,18 @@
         </form>
     </section>
 
-    <section>
+    <section class="operaciones">
         <h2>Calcula el área y perimetro de un Triangulo</h2>
+        <svg height="200" width="200">
+            <polygon points="100,0 0,180 200,180" style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1" />
+          </svg>
         <form>
             <label for="inputT-Lado1">
-                Escribe cuanto el primer lado del Triangulo
+                Escribe cuanto mide el primer lado del Triangulo
             </label>
             <input id="inputT-Lado1" type="number">
             <label for="inputT-Lado2">
-                Escribe cuanto el segundo del Triangulo
+                Escribe cuanto mide el segundo del Triangulo
             </label>
             <input id="inputT-Lado2" type="number">
             <label for="inputT-Base">
@@ -49,8 +58,11 @@
         </form>
     </section>
 
-    <section>
+    <section class="operaciones">
         <h2>Calcula el área y perimetro de un Circulo</h2>
+        <svg height="200" width="200">
+            <circle cx="100" cy="100" r="95" style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1"/>
+        </svg>
         <form>
             <label for="inputRadio">
                 Escribe cuanto mide el radio del circulo
