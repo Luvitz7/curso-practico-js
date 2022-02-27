@@ -27,18 +27,46 @@ header {
     margin: 20px;
 }
 
+#links {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.figuras {
+    display: flex;
+    justify-content: center;
+}
+
 form {
     display: inline-block;
 }
 
+.caja {
+    margin-top: 12px ;
+}
+
+
 h2 {
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 input {
     width: 100%;
     margin-bottom: 8px;
 }
+
+.addContainer {
+    margin-bottom: 8xp;
+}
+
+.add {
+    width: 48%;
+}
+
 
 button {
     width: 48%;
@@ -49,15 +77,50 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 8px;
+    margin-bottom: 4px;
 }
 
 button:hover {
     background-color: rgb(20, 161, 39);
     color: aliceblue;
+
+}
+
+ol {
+    margin-left: 16px;
+}
+
+.operation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectSalario {
+    height: 30px;
+    width: 49%;
+    bottom: 0;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+#listaDatosMex {
+    align-content: space-between;
+}
+
+.resultado {
+    margin-top: 12px;
 }
 
 @media (max-width: 680px){
     .container {
         grid-template-columns: auto;
     }
+    #links {
+        flex-direction: column;
+    }
 }
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -40,6 +40,10 @@ function areaTriangulo(base, altura) {
 
 //console.log("El  área del triangulo es: " + areaTriangulo + " cm.");
 
+function alturaTriangulo(lado1,lado2,base) {
+    return Math.sqrt(lado1*lado2-((base/2)*(base/2))) ;
+}
+
 console.groupEnd();
 
 //Codigo cirulo
@@ -113,6 +117,25 @@ function calcularAreaTriangulo() {
     alert (area);
 }
 
+function calcularAlturaTriangulo() {
+    let value1 = parseInt(document.getElementById("inputT-Lado1").value);
+    let value2 = parseInt(document.getElementById("inputT-Lado2").value);
+    let valueB = parseInt(document.getElementById("inputT-Base").value);
+
+    var hipotenusa = value1+value2;
+
+
+    if (hipotenusa >= valueB) {   
+        if (value1==value2){
+            let altura = alturaTriangulo(value1,value2,valueB);
+            alert ("Es un triangulo isoseles y su altura es "+ altura);
+        } else {
+            alert ("No es un triangulo isoseles");
+        }
+    } else {
+        alert("Esto no es un triangulo");
+    }    
+}
 // Para calcular los valores del Circulo
 
 function calcularPerimetroCirculo() {
@@ -131,3 +154,4 @@ function calcularAreaCirculo() {
     const area = areaCirculo(valueR);
     alert (area);
 }
+

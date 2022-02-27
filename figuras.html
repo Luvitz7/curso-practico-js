@@ -18,9 +18,11 @@
     <section class="container">
     <section class="operaciones">
         <h2>Calcula el área y perimetro de un Cuadrado</h2>
+        <div class="figuras">
         <svg height="200" width="200">
-            <polygon points="0,0 0,180 180,180 180,0 " style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1" />
+            <polygon points="10,0 10,180 190,180 190,0 " style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1" />
         </svg>
+        </div>
         <form>    
             <label for="inputCuadrado">
                 Escribe cuanto mide los lados del cuadrado
@@ -33,9 +35,11 @@
 
     <section class="operaciones">
         <h2>Calcula el área y perimetro de un Triangulo</h2>
+        <div class="figuras">
         <svg height="200" width="200">
             <polygon points="100,0 0,180 200,180" style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1" />
           </svg>
+        </div> 
         <form>
             <label for="inputT-Lado1">
                 Escribe cuanto mide el primer lado del Triangulo
@@ -55,14 +59,17 @@
             <input id="inputT-altura" type="number">
             <button type="button" onclick="calcularPerimetroTriangulo()">Calcula el perimetro</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calcula el área</button>
+            <button type="button" onclick="calcularAlturaTriangulo()">Calcula el altura</button>
         </form>
     </section>
 
     <section class="operaciones">
         <h2>Calcula el área y perimetro de un Circulo</h2>
+        <div class="figuras">
         <svg height="200" width="200">
             <circle cx="100" cy="100" r="95" style="fill:rgb(0, 255, 234);stroke:rgb(0, 255, 234);stroke-width:1"/>
         </svg>
+        </div>
         <form>
             <label for="inputRadio">
                 Escribe cuanto mide el radio del circulo

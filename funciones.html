@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="estilo">
+    <title>Funciones</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Segunda parte del curso practico de JavaScrip</p>
+    </header>
+    <div class="container">
+    <section class="operaciones">
+        <h2>Promedio, Moda y Mediana</h2>
+        <p>Vamos a calcular el promedio, moda o mediana</p>
+        <form action=""> 
+        <section class="caja">
+            <label for="lista">Por favor ingresa los datos separados por una coma </label>
+            <input id="lista" type="text" placeholder=" Ejemplo: 5, 4, 6, 12">
+        <button type="button" onclick="onClickButtonPromedio()">
+            Calcula el promedio
+        </button>
+        <button type="button" onclick="onClickButtonModa()">
+            Calcula la moda
+        </button>
+        <button type="button" onclick="onClickButtonMediana()">
+            Calcula la mediana
+        </button>
+        <button type="button" onclick="onClickButtonBorrar()">
+            Borrar Lista
+        </button>
+        </section>
+        <section class="caja">
+            <label for="cambioLista">Agrega o modifica algún dato</label>
+            <div class="addContainer">
+            <input id="dato" type="number" placeholder="Ingresa el valor del dato" class="add">
+            <button type="button" onclick="onClickButtonAdd()">
+                Añadir
+            </button>
+            </div>
+            <label for="cambioLista">Inserta la ubicacion del dato que deseas modificar o eliminar</label>
+            <input id="position" type="number" placeholder=" Ejemplo: 5">
+            <button type="button" onclick="onClickButtonTransform()">
+                Modificar
+            </button>
+            <button type="button" onclick="onClickButtonErrase()">
+                Eliminar
+            </button>
+        </section>
+        </form>
+        <p id="resultP" class="resultado"></p>
+    </section>
+    <section class="operaciones">
+        <h2>Lista de datos guardados</h2>
+        <ol id="listaDatos"></ol>
+    </section>
+    </div>
+    <script src="./funciones.js"></script>
+</body>
+</html>

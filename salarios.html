@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="estilo">
+    <title>Salarios</title>
+</head>
+<body>
+    <header>
+        <h1>Salarios</h1>
+        <p>Cuarta parte del curso practico de JavaScrip</p>
+    </header>
+    <div class="container">
+    <section class="operaciones">
+        <div class="container2">
+        <div class="titulos">
+        <h2>Calculo salarial</h2>
+        <p>Vamos a realizar un analisis salarial:</p>
+        </div>    
+        <form action="" id="form">
+            <div>    
+            <label for="">Lista predeterminada</label>
+            <input id="checkBoxPre" type="checkbox" value="OFF" onclick="checkBoxF()">
+            </div>
+        </div>
+            <label for="name">Por favor ingresa el nombre </label>
+            <input id="name" type="text" placeholder=" Ejemplo: Mario"  > 
+            <label for="salary">Ingresa el salario </label>
+            <input id="salary" type="text" placeholder=" Ejemplo: 12000"  >
+            <div class="operation">
+            <select name="" id="selectOperation" class="selectSalario" onchange="switchFormula()">
+                <option value="1" selected>Agrega elementos</option>
+                <option value="2">Modifica elementos</option>
+                <option value="3">Borra elementos</option>
+                <option value="4">Limpiar Lista</option>
+            </select>
+            <button type="button" id="btn-render" onclick="addPeople()">
+                Registrar persona
+            </button>
+            </div>
+            <div class="xtra"> 
+                <label for="positionS">Ingresa la posicion dentro de la lista </label>
+                <input id="positionS" type="number" placeholder=" Posicion en la lista: 1 " >
+            </div>
+            <div class="operation">
+                <label for="" >Seleciona el tipo de analisis</label>   
+                <select name="" id="selectOperationCalc" class="selectSalario" onchange="switchFormulaCalc()">
+                    <option value="promedio" selected >Promedio</option>
+                    <option value="media">Mediana</option>
+                    <option value="medianaTop10">Mediana top 10</option>
+                </select>
+                <button type="button" id="calcButton" onclick="calculaPromedioSalary()">
+                    Calcula el promedio
+                </button>
+        </form>
+        </div>
+        <p id="resultPMex" class="resultado"></p>
+
+    </section>
+    <section class="operaciones">
+        <h2>Los datos de la lista son:</h2>
+        <ol id="listaDatosMex"></ol>
+    </section>
+    </div>
+    <script src="./salarios.js"></script>
+    <script src="./funciones.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="estilo">
+    <title>Porcentajes y descuentos | Curso practico JavaScript</title>
+</head>
+<body>
+    <header>
+    <h1>Porcentajes y descuentos</h1>
+    <p>Segunda parte del curso practico de JavaScrip</p>
+    </header>
+    <section class="operaciones">
+        <h2>
+            Calcula el precio de tus productos con descuento
+        </h2>
+        <form action=""> 
+            <label for="inputPrice">Escribe el precio de tu producto</label>
+            <input id="inputPrice" type="number">
+            <label for="inputDiscount">Escribe el valor de descuento</label>
+            <input id="inputDiscount" type="number">
+            <label for="inputCupon">Selecciona el valor de tu cupón</label>
+            <select name="Cupón" id="inputCupon" type="number">
+                <script type="text/javascript">
+                    for(var x=0; x<=100; x+=5){
+                        document.write("<option>"+ x +"</option>");
+                    }
+                    
+                </script>
+            </select>
+            <select name="CuponsArray" id="inputCuponsA">
+                <option value="LuvitzEsGod">Luvitz es God</option>
+                <option value="UsandoArraysOp">Usando arrays op</option>
+                <option value="LasMotosSonCool">Las motos son cool</option>
+            </select>
+            <button type="button" onclick="onClickButtonPriceDiscount()">
+                Calcula el precio con descuento
+            </button>
+            <button type="button" onclick="onClickArrayButton()">
+                Calcula el precio con descuento de cupones secreto
+            </button>
+
+            <p id="resultP" class="resultado"></p>
+        </form>
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
